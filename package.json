@@ -1,0 +1,14 @@
+{
+  "name": "sockettask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-both": "npm run start-frontend & npm run start-backend",
+    "start-frontend": "cd FrontEnd/chats && npm start",
+    "start-backend": "cd Backend && nodemon index.js",
+    "postinstall": "npm run start-both"
+  },
+  "author": "",
+  "license": "ISC"
+}
